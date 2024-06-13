@@ -55,9 +55,9 @@ Usage:
   -p PROKKA_PATH	Prokka software script location path
   
 Example:
-  bash prokka_blast.sh -i ./example_phage -o ./example_phage_annotation -p ~/.conda/envs/DiffXGPBI/bin/prokka 
+  bash prokka.sh -i ./example_phage -o ./example_phage_annotation -p ~/.conda/envs/DiffXGPBI/bin/prokka 
   
-  bash prokka_blast.sh -i ./example_host -o ./example_host_annotation -p ~/.conda/envs/DiffXGPBI/bin/prokka
+  bash prokka.sh -i ./example_host -o ./example_host_annotation -p ~/.conda/envs/DiffXGPBI/bin/prokka
 ```
 
 ##### 2. Predictive result
