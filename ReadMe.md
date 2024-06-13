@@ -100,6 +100,6 @@ Example:
 | template                 | intermediate generated feature result file                   |
 | DiffXGPBI.py             | DiffXGPBI model predict code                                 |
 | prokka.sh                | prokka annotation code                                       |
-| requirements.txt         | run DeepPBI-KG required related python module                |
+| requirements.txt         | run DiffXGPBI required related python module                |
 | ReadMe.md                | ReadMe Markdown                                              |
 
