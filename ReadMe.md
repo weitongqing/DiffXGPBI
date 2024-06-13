@@ -22,7 +22,7 @@ conda activate DiffXGPBI
 
 ##### 3. Install prokka and blast using the Conda package manager
 
-To install the prokka as a dependency, once the installation is finished, you can start using prokka and blast within your Conda environment.
+To install the prokka as a dependency, once the installation is finished, you can start using prokka within your Conda environment.
 
 ```shell
 conda install biobuilds::prokka
