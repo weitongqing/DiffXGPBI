@@ -22,7 +22,7 @@ conda activate DiffXGPBI
 
 ##### 3. Install prokka and blast using the Conda package manager
 
-To install the prokka and blast as a dependency, once the installation is finished, you can start using prokka and blast within your Conda environment.
+To install the prokka as a dependency, once the installation is finished, you can start using prokka and blast within your Conda environment.
 
 ```shell
 conda install biobuilds::prokka
@@ -45,7 +45,7 @@ pip install xgboost
 
 ##### 1. Prokka annotation 
 
-Run ***prokka_blast.sh*** to get a batch of prokka annotation files. Input the fasta files of some phages (bacterium) under a folder, and output a prokka annotation folder for each phage (bacteria). 
+Run ***prokka.sh*** to get a batch of prokka annotation files. Input the fasta files of some phages (bacterium) under a folder, and output a prokka annotation folder for each phage (bacteria). 
 
 ```shell
 Usage:
@@ -62,7 +62,7 @@ Example:
 
 ##### 2. Predictive result
 
-Run ***DiffXGPBI.py*** to predict PBI and directly generate prediction results (html file). Example of prediction results: 
+Run ***DiffXGPBI.py*** to predict PBI and directly generate prediction results. Example of prediction results: 
 
 - ***Phage*** is the phage ID to be predicted. 
 - ***Bacterium*** is the bacterium ID to be predicted. 
