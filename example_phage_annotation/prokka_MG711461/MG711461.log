@@ -1,0 +1,117 @@
+[14:01:21] This is prokka 1.12
+[14:01:21] Written by Torsten Seemann <torsten.seemann@gmail.com>
+[14:01:21] Homepage is https://github.com/tseemann/prokka
+[14:01:21] Local time is Thu Jun 13 14:01:20 2024
+[14:01:21] You are TongqingWei
+[14:01:21] Operating system is linux
+[14:01:21] You have BioPerl 1.006924
+[14:01:21] System has 40 cores.
+[14:01:21] Will use maximum of 8 cores.
+[14:01:21] Annotating as >>> Bacteria <<<
+[14:01:21] Generating locus_tag from './example_phage/MG711461.1.fasta' contents.
+[14:01:21] Setting --locustag PADPHJIN from MD5 9ad91327eac0c9d16360cdb21e9c3727
+[14:01:21] Creating new output folder: ./example_phage_annotation/prokka_MG711461
+[14:01:21] Running: mkdir -p \.\/example_phage_annotation\/prokka_MG711461
+[14:01:21] Using filename prefix: MG711461.XXX
+[14:01:21] Setting HMMER_NCPU=1
+[14:01:21] Writing log to: ./example_phage_annotation/prokka_MG711461/MG711461.log
+[14:01:21] Command: /bios-store1/software/anaconda3/bin/prokka ./example_phage/MG711461.1.fasta --outdir ./example_phage_annotation/prokka_MG711461 --prefix MG711461
+[14:01:21] Appending to PATH: /bios-store1/software/anaconda3/bin
+[14:01:21] Looking for 'aragorn' - found /bios-store1/software/anaconda3/bin/aragorn
+[14:01:21] Determined aragorn version is 1.2
+[14:01:21] Looking for 'barrnap' - found /bios-store1/software/anaconda3/bin/barrnap
+[14:01:21] Determined barrnap version is 0.9
+[14:01:21] Looking for 'blastp' - found /bios-store1/software/anaconda3/bin/blastp
+[14:01:21] Determined blastp version is 2.5
+[14:01:21] Looking for 'cmpress' - found /bios-store1/software/anaconda3/bin/cmpress
+[14:01:21] Determined cmpress version is 1.1
+[14:01:21] Looking for 'cmscan' - found /bios-store1/software/anaconda3/bin/cmscan
+[14:01:21] Determined cmscan version is 1.1
+[14:01:21] Looking for 'egrep' - found /bios-store1/software/bin/egrep
+[14:01:21] Looking for 'find' - found /usr/bin/find
+[14:01:21] Looking for 'grep' - found /bios-store1/software/bin/grep
+[14:01:21] Looking for 'hmmpress' - found /bios-store1/software/anaconda3/bin/hmmpress
+[14:01:21] Determined hmmpress version is 3.3
+[14:01:21] Looking for 'hmmscan' - found /bios-store1/software/anaconda3/bin/hmmscan
+[14:01:21] Determined hmmscan version is 3.3
+[14:01:21] Looking for 'java' - found /bios-store1/software/anaconda3/bin/java
+[14:01:21] Looking for 'less' - found /usr/bin/less
+[14:01:21] Looking for 'makeblastdb' - found /bios-store1/software/anaconda3/bin/makeblastdb
+[14:01:21] Determined makeblastdb version is 2.5
+[14:01:21] Looking for 'minced' - found /bios-store1/software/anaconda3/bin/minced
+[14:01:21] Determined minced version is 4.2
+[14:01:21] Looking for 'parallel' - found /bios-store1/software/anaconda3/bin/parallel
+[14:01:21] Determined parallel version is 20170422
+[14:01:21] Looking for 'prodigal' - found /bios-store1/software/anaconda3/bin/prodigal
+[14:01:21] Determined prodigal version is 2.6
+[14:01:21] Looking for 'prokka-genbank_to_fasta_db' - found /bios-store1/software/anaconda3/bin/prokka-genbank_to_fasta_db
+[14:01:21] Looking for 'sed' - found /bios-store1/software/bin/sed
+[14:01:21] Looking for 'tbl2asn' - found /bios-store1/software/anaconda3/bin/tbl2asn
+[14:01:21] Determined tbl2asn version is 25.8
+[14:01:21] Using genetic code table 11.
+[14:01:21] Loading and checking input file: ./example_phage/MG711461.1.fasta
+[14:01:21] Wrote 1 contigs totalling 48211 bp.
+[14:01:21] Predicting tRNAs and tmRNAs
+[14:01:21] Running: aragorn -l -gc11  -w \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.fna
+[14:01:21] Found 0 tRNAs
+[14:01:21] Predicting Ribosomal RNAs
+[14:01:21] Running Barrnap with 8 threads
+[14:01:21] Found 0 rRNAs
+[14:01:21] Skipping ncRNA search, enable with --rfam if desired.
+[14:01:21] Total of 0 tRNA + rRNA features
+[14:01:21] Searching for CRISPR repeats
+[14:01:21] Found 0 CRISPRs
+[14:01:21] Predicting coding sequences
+[14:01:21] Contigs total 48211 bp, so using meta mode
+[14:01:21] Running: prodigal -i \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.fna -c -m -g 11 -p meta -f sco -q
+[14:01:22] Found 65 CDS
+[14:01:22] Connecting features back to sequences
+[14:01:22] Not using genus-specific database. Try --usegenus to enable it.
+[14:01:22] Annotating CDS, please be patient.
+[14:01:22] Will use 8 CPUs for similarity searching.
+[14:01:22] There are still 65 unannotated CDS left (started with 65)
+[14:01:22] Will use blast to search against /bios-store1/software/anaconda3/bin/../db/kingdom/Bacteria/sprot with 8 CPUs
+[14:01:22] Running: cat \.\/example_phage_annotation\/prokka_MG711461\/sprot\.faa | parallel --gnu --plain -j 8 --block 957 --recstart '>' --pipe blastp -query - -db /bios-store1/software/anaconda3/bin/../db/kingdom/Bacteria/sprot -evalue 1e-06 -num_threads 1 -num_descriptions 1 -num_alignments 1 -seg no > \.\/example_phage_annotation\/prokka_MG711461\/sprot\.blast 2> /dev/null
+[14:01:23] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/sprot.faa
+[14:01:23] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/sprot.blast
+[14:01:23] There are still 58 unannotated CDS left (started with 65)
+[14:01:23] Will use hmmer3 to search against /bios-store1/software/anaconda3/bin/../db/hmm/HAMAP.hmm with 8 CPUs
+[14:01:23] Running: cat \.\/example_phage_annotation\/prokka_MG711461\/HAMAP\.hmm\.faa | parallel --gnu --plain -j 8 --block 815 --recstart '>' --pipe hmmscan --noali --notextw --acc -E 1e-06 --cpu 1 /bios-store1/software/anaconda3/bin/../db/hmm/HAMAP.hmm /dev/stdin > \.\/example_phage_annotation\/prokka_MG711461\/HAMAP\.hmm\.hmmer3 2> /dev/null
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/HAMAP.hmm.faa
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/HAMAP.hmm.hmmer3
+[14:01:25] Labelling remaining 56 proteins as 'hypothetical protein'
+[14:01:25] Found 9 unique /gene codes.
+[14:01:25] Fixed 0 colliding /gene names.
+[14:01:25] Adding /locus_tag identifiers
+[14:01:25] Assigned 65 locus_tags to CDS and RNA features.
+[14:01:25] Writing outputs to ./example_phage_annotation/prokka_MG711461/
+[14:01:25] Generating annotation statistics file
+[14:01:25] Generating Genbank and Sequin files
+[14:01:25] Running: tbl2asn -V b -a r10k -l paired-ends -M n -N 1 -y 'Annotated using prokka 1.12 from https://github.com/tseemann/prokka' -Z \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.err -i \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.fsa 2> /dev/null
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/errorsummary.val
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/MG711461.dr
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/MG711461.fixedproducts
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/MG711461.ecn
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/MG711461.val
+[14:01:25] Repairing broken .GBK output that tbl2asn produces...
+[14:01:25] Running: sed 's/COORDINATES: profile/COORDINATES:profile/' < \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.gbf > \.\/example_phage_annotation\/prokka_MG711461\/MG711461\.gbk
+[14:01:25] Deleting unwanted file: ./example_phage_annotation/prokka_MG711461/MG711461.gbf
+[14:01:25] Output files:
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.log
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.fna
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.gff
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.faa
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.ffn
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.tbl
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.fsa
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.tsv
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.txt
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.sqn
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.err
+[14:01:25] ./example_phage_annotation/prokka_MG711461/MG711461.gbk
+[14:01:25] Annotation finished successfully.
+[14:01:25] Walltime used: 0.08 minutes
+[14:01:25] If you use this result please cite the Prokka paper:
+[14:01:25] Seemann T (2014) Prokka: rapid prokaryotic genome annotation. Bioinformatics. 30(14):2068-9.
+[14:01:25] Type 'prokka --citation' for more details.
+[14:01:25] Share and enjoy!
