@@ -31,8 +31,6 @@ prokka -h
 # set database index for prokka
 prokka --setupdb
 
-conda install -c bioconda blast
-blastn -h
 ```
 
 ##### 4. Install python modules using pip
