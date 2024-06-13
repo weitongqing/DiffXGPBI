@@ -95,7 +95,7 @@ Example:
 | host_external            | the fasta sequence file of bacteria in external validation dataset |
 | host_raw_data            | the fasta sequence file of bacteria in our collected raw dataset |
 | model                    | modle parameter related file                                 |
-| phage_external           | the fasta sequence file of phage in our collected raw dataset |
+| phage_external           | the fasta sequence file of phage in external validation dataset |
 | phage_raw_data           | the fasta sequence file of phage in our collected raw dataset |
 | template                 | intermediate generated feature result file                   |
 | DiffXGPBI.py             | DiffXGPBI model predict code                                 |
