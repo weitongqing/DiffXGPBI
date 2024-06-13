@@ -70,7 +70,7 @@ Run ***DiffXGPBI.py*** to predict PBI and directly generate prediction results (
 
 ```shell
 Usage:
-  python DeepPBI-KG.py [--phage_annotation <PHAGE_FOLDER>] [--bacterium_annotation <BACTERIUM_FOLDER>] [--output <OUTPUT_RESULT>] [--model <MODEL_PARAMETER>] [--template <INTERMEDIATE_RESULT>] 
+  python DiffXGPBI.py [--phage_annotation <PHAGE_FOLDER>] [--bacterium_annotation <BACTERIUM_FOLDER>] [--output <OUTPUT_RESULT>] [--model <MODEL_PARAMETER>] [--template <INTERMEDIATE_RESULT>] 
   --phage_annotation PHAGE_FOLDER	Phage folder after annotation
   --bacterium_annotation BACTERIUM_FOLDER	Bacteria folder after annotation
   --output OUTPUT_RESULT	Predict result output path
