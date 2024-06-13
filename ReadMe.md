@@ -89,7 +89,7 @@ Example:
 | code                     | data process and intermediate result analysis code           |
 | example_host             | sample host fasta folder                                     |
 | example_host_annotation  | sample host's prokka annotation result folder                |
-| example_output           | example output result csv  file and html file                |
+| example_output           | example output result csv file              |
 | example_phage            | sample phage fasta folder                                    |
 | example_phage_annotation | sample phage's prokka annotation result folder               |
 | host_external            | the fasta sequence file of bacteria in external validation dataset |
