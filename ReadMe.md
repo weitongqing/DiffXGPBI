@@ -35,7 +35,7 @@ prokka --setupdb
 
 ##### 4. Install python modules using pip
 
-Any of the python third-party libraries involved can be installed by pip (pip install *), where torch is installed using the following command. Refer to requirements. 
+Any of the python third-party libraries involved can be installed by pip (pip install *), where xgboost is installed using the following command. Refer to requirements. 
 
 ```shell
 pip install xgboost
